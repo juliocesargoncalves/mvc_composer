@@ -11,10 +11,20 @@
     </style>
 </head>
 <body>
-    <nav class="purple darken-4" id="menu"></nav>
+    <nav class="grey darken-4" id="menu">
+        <div class="nav-wapper container">
+            <a href="?router=Site/home/" class="brand-logo light">
+               Logo
+            </a>
+            <ul class="right">
+                <li><a href="?router=Site/cadastro/">Cadastro</a></li>
+                <li><a href="?router=Site/consulta/">Consulta</a></li>
+            </ul>
+        </div>
+    </nav>
 
  
-
+   
 <script src="config/materialize/js/materialize.min.js"></script>
 </body>
 </html>
