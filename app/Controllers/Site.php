@@ -29,6 +29,7 @@ class Site extends Crud{
    }
 
     public function consulta(){
+        $consulta = $this->read();
         require_once __DIR__ . '/../Views/consulta.php';
     }
 }

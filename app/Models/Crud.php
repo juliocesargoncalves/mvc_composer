@@ -4,8 +4,6 @@ namespace app\Models;
 
 class Crud extends Connection{
 
-  
-
     public function create(Array $data){
 
         if(is_array($data)){
@@ -24,6 +22,14 @@ class Crud extends Connection{
 
     public function read(){
 
+        $conn = $this->connect();
+        $sql = "SELECT * FROM person";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetchAll();
+        return $result;
+
+        
     }
 
     public function update(){
